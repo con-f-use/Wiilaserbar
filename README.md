@@ -14,3 +14,5 @@ infrared diodes of the "sensor" bar. You can buy infrared laser diode modules on
 I used cheap 890nm modules from China said to emit 30mW (the output power with mine was exaggerated -
 actually measured power at a university lab was ~2mW).
 
+The driver board was done in KiCAD while the case was 3D modelled in FreeCAD and printed on a LulzBot Mini.
+
