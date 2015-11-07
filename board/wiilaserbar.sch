@@ -1,0 +1,566 @@
+EESchema Schematic File Version 2
+LIBS:wiilaserbar-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:w_vacuum
+LIBS:w_transistor
+LIBS:w_rtx
+LIBS:w_relay
+LIBS:w_opto
+LIBS:w_microcontrollers
+LIBS:w_memory
+LIBS:w_logic
+LIBS:w_device
+LIBS:w_connectors
+LIBS:w_analog
+LIBS:jcgb
+LIBS:logo
+LIBS:wiilaserbar-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 8283 5827
+encoding utf-8
+Sheet 1 1
+Title "wiilaserbar"
+Date "2015-10-22"
+Rev "v0.5"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R_Small R3
+U 1 1 55B8A682
+P 4000 2350
+F 0 "R3" V 4200 2300 50  0000 L CNN
+F 1 "1k5" V 4100 2300 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4000 2350 60  0001 C CNN
+F 3 "" H 4000 2350 60  0000 C CNN
+	1    4000 2350
+	0    1    -1   0   
+$EndComp
+$Comp
+L Q_PMOS_GSD Q1
+U 1 1 55B8A77F
+P 2350 2000
+F 0 "Q1" V 2650 2050 50  0000 R CIN
+F 1 "PMOS" V 2550 2100 50  0000 R CIN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23" H 2550 2100 29  0001 C CNN
+F 3 "" H 2350 2000 60  0000 C CNN
+	1    2350 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND-RESCUE-wiilaserbar #PWR01
+U 1 1 55B8A848
+P 3150 3000
+F 0 "#PWR01" H 3150 2750 50  0001 C CNN
+F 1 "GND" H 3150 2850 50  0000 C CNN
+F 2 "" H 3150 3000 60  0000 C CNN
+F 3 "" H 3150 3000 60  0000 C CNN
+	1    3150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small Rlx1
+U 1 1 55B8A959
+P 5450 2300
+F 0 "Rlx1" H 5500 2350 50  0000 L CNN
+F 1 "82k" H 5500 2275 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 5450 2300 60  0001 C CNN
+F 3 "" H 5450 2300 60  0000 C CNN
+	1    5450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small Rfb1
+U 1 1 55B8A99C
+P 5450 2500
+F 0 "Rfb1" H 5225 2450 50  0000 L CNN
+F 1 "15k" H 5250 2525 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 5450 2500 60  0001 C CNN
+F 3 "" H 5450 2500 60  0000 C CNN
+	1    5450 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 55B8A9CA
+P 3150 2100
+F 0 "R1" H 3000 2150 50  0000 L CNN
+F 1 "1k5" H 2950 2050 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 3150 2100 60  0001 C CNN
+F 3 "" H 3150 2100 60  0000 C CNN
+	1    3150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 55B8A9FE
+P 5150 2050
+F 0 "C1" H 5000 2150 50  0000 L CNN
+F 1 "10n" H 5200 2150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5150 2050 60  0001 C CNN
+F 3 "" H 5150 2050 60  0000 C CNN
+	1    5150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-wiilaserbar #PWR02
+U 1 1 55B8AA4F
+P 4800 3000
+F 0 "#PWR02" H 4800 2750 50  0001 C CNN
+F 1 "GND" H 4800 2850 50  0000 C CNN
+F 2 "" H 4800 3000 60  0000 C CNN
+F 3 "" H 4800 3000 60  0000 C CNN
+	1    4800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 55B8AA72
+P 5450 1950
+F 0 "#PWR03" H 5450 1800 50  0001 C CNN
+F 1 "VCC" H 5450 2100 50  0000 C CNN
+F 2 "" H 5450 1950 60  0000 C CNN
+F 3 "" H 5450 1950 60  0000 C CNN
+	1    5450 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_2 J1
+U 1 1 55B8AD76
+P 1350 1950
+F 0 "J1" H 1400 1800 60  0000 C CNN
+F 1 "Vin" H 1400 2100 60  0000 C CNN
+F 2 "w_conn_kk100:kk100_22-23-2021" H 1350 1950 60  0001 C CNN
+F 3 "" H 1350 1950 60  0000 C CNN
+	1    1350 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND-RESCUE-wiilaserbar #PWR04
+U 1 1 55B8BE65
+P 2100 3000
+F 0 "#PWR04" H 2100 2750 50  0001 C CNN
+F 1 "GND" H 2100 2850 50  0000 C CNN
+F 2 "" H 2100 3000 60  0000 C CNN
+F 3 "" H 2100 3000 60  0000 C CNN
+	1    2100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-wiilaserbar #PWR05
+U 1 1 55B8CBC4
+P 5150 3000
+F 0 "#PWR05" H 5150 2750 50  0001 C CNN
+F 1 "GND" H 5150 2850 50  0000 C CNN
+F 2 "" H 5150 3000 60  0000 C CNN
+F 3 "" H 5150 3000 60  0000 C CNN
+	1    5150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky_Small D2
+U 1 1 55B8CD3C
+P 5150 2300
+F 0 "D2" V 5200 2350 50  0000 L CNN
+F 1 "D_Schottky_Small" H 4870 2220 50  0001 L CNN
+F 2 "jcgb:DIODE_POWERMITE" V 5150 2300 60  0001 C CNN
+F 3 "" V 5150 2300 60  0000 C CNN
+	1    5150 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L L_Small L1
+U 1 1 55B8CFA4
+P 5300 2200
+F 0 "L1" V 5400 2150 50  0000 L CNN
+F 1 "2u2" V 5260 2140 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5300 2200 60  0001 C CNN
+F 3 "" H 5300 2200 60  0000 C CNN
+	1    5300 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND-RESCUE-wiilaserbar #PWR06
+U 1 1 55B8D0F8
+P 5450 3000
+F 0 "#PWR06" H 5450 2750 50  0001 C CNN
+F 1 "GND" H 5450 2850 50  0000 C CNN
+F 2 "" H 5450 3000 60  0000 C CNN
+F 3 "" H 5450 3000 60  0000 C CNN
+	1    5450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 55B8D7AB
+P 5750 2400
+F 0 "C2" H 5760 2470 50  0000 L CNN
+F 1 "10u" H 5760 2320 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5750 2400 60  0001 C CNN
+F 3 "" H 5750 2400 60  0000 C CNN
+	1    5750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-wiilaserbar #PWR07
+U 1 1 55B8D83F
+P 5750 3000
+F 0 "#PWR07" H 5750 2750 50  0001 C CNN
+F 1 "GND" H 5750 2850 50  0000 C CNN
+F 2 "" H 5750 3000 60  0000 C CNN
+F 3 "" H 5750 3000 60  0000 C CNN
+	1    5750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_2 J2
+U 1 1 55B8EB92
+P 4250 2400
+F 0 "J2" H 4300 2250 60  0000 C CNN
+F 1 "wii" H 4300 2550 60  0000 C CNN
+F 2 "w_conn_kk100:kk100_22-23-2021" H 4250 2400 60  0001 C CNN
+F 3 "" H 4250 2400 60  0000 C CNN
+	1    4250 2400
+	1    0    0    1   
+$EndComp
+$Comp
+L HEADER_2 J3
+U 1 1 55B8EDCF
+P 6100 2350
+F 0 "J3" H 6150 2200 60  0000 C CNN
+F 1 "lsr2" H 6150 2500 60  0000 C CNN
+F 2 "w_conn_kk100:kk100_22-23-2021" H 6100 2350 60  0001 C CNN
+F 3 "" H 6100 2350 60  0000 C CNN
+	1    6100 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L HEADER_2 J5
+U 1 1 55B921AA
+P 2950 2500
+F 0 "J5" H 3000 2350 60  0000 C CIN
+F 1 "stay on" H 3000 2650 60  0000 C CIN
+F 2 "jcgb:PINHEAD1-2" H 2950 2500 60  0001 C CNN
+F 3 "" H 2950 2500 60  0000 C CNN
+	1    2950 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 55B9DE02
+P 2650 2250
+F 0 "C3" H 2660 2320 50  0000 L CNN
+F 1 "4u7" H 2660 2170 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2650 2250 60  0001 C CNN
+F 3 "" H 2650 2250 60  0000 C CNN
+	1    2650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-wiilaserbar #PWR08
+U 1 1 55B9DF2A
+P 2650 3000
+F 0 "#PWR08" H 2650 2750 50  0001 C CNN
+F 1 "GND" H 2650 2850 50  0000 C CNN
+F 2 "" H 2650 3000 60  0000 C CNN
+F 3 "" H 2650 3000 60  0000 C CNN
+	1    2650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L unethische.org O1
+U 1 1 55BB69CE
+P 7100 4400
+F 0 "O1" H 7100 4600 60  0001 C CNN
+F 1 "unethische.org" H 7100 4200 39  0000 C CNN
+F 2 "jcgb:unethi_silk" H 7100 4400 60  0001 C CNN
+F 3 "" H 7100 4400 60  0000 C CNN
+	1    7100 4400
+	1    0    0    -1  
+$EndComp
+Text Notes 3600 4650 0    60   ~ 0
+Meant to control two IR laser diode modules via a Nintendo\nWii. The diodes project dots to a wall replacing the Wii \nsensor bar. Ideal for use with movie projectors.\n\nOptional components written in italics.
+$Comp
+L OPEN_HARDWARE_1 LOGO1
+U 1 1 55BB83E8
+P 7550 4400
+F 0 "LOGO1" H 7550 4675 60  0001 C CNN
+F 1 "open hardware" H 7550 4175 39  0000 C CNN
+F 2 "w_logo:Logo_silk_OSHW_6x6mm" H 7550 4400 60  0001 C CNN
+F 3 "" H 7550 4400 60  0000 C CNN
+	1    7550 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Gnu_GPL LO1
+U 1 1 55BB870C
+P 6630 4370
+F 0 "LO1" H 6630 4670 60  0001 C CNN
+F 1 "Gnu_GPL" H 6630 4100 60  0000 C CNB
+F 2 "jcgb:gnu_gpl" H 6630 4340 60  0001 C CNN
+F 3 "" H 6640 4760 60  0001 C CNN
+	1    6630 4370
+	1    0    0    -1  
+$EndComp
+$Comp
+L TVS_BIPOL D3
+U 1 1 55C604B7
+P 2100 2050
+F 0 "D3" V 2150 2150 40  0000 C CIN
+F 1 "TVS" V 2200 2150 31  0000 C CIN
+F 2 "Diodes_SMD:SOD-523" H 2100 2050 60  0001 C CNN
+F 3 "" H 2100 2050 60  0000 C CNN
+	1    2100 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L AOZ1280 IC1
+U 1 1 55C6D60F
+P 4800 2300
+F 0 "IC1" H 4800 2400 39  0000 C CNN
+F 1 "AOZ1280" H 4800 2200 39  0000 C CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23-6" H 4350 2100 20  0001 C CNN
+F 3 "http://www.aosmd.com/res/data_sheets/AOZ1280CI.pdf" H 4300 2050 20  0001 C CIN
+F 4 "Vout = 0.8 V * ( 1 + Rlx/Rfb ) " H 4800 2360 10  0000 C CNB "Vout"
+F 5 "1.8V: Rlx = 80k6; Rfb = 64k2" H 4800 2340 8   0000 C CNN "1V8"
+F 6 "3.3V: Rlx = 49k9; Rfb = 15k8" H 4800 2320 8   0000 C CNN "3V3"
+F 7 "5V: Rlx = 49k9; Rfb = 9k53" H 4800 2300 8   0000 C CNN "5V"
+F 8 "9V: Rlx = 16k9; Rfb = 1k62" H 4800 2280 8   0000 C CNN "9V"
+F 9 "12V: Rlx = 18k; Rfb = 1k3" H 4800 2260 8   0000 C CNN "12V"
+	1    4800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TVS_BIPOL D4
+U 1 1 5623EC8B
+P 6300 2350
+F 0 "D4" V 6200 2300 40  0000 C CIN
+F 1 "TVS" V 6400 2300 31  0000 C CIN
+F 2 "Diodes_SMD:SOD-523" H 6300 2350 60  0001 C CNN
+F 3 "" H 6300 2350 60  0000 C CNN
+	1    6300 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L HEADER_2 J4
+U 1 1 55B8EE63
+P 6500 2350
+F 0 "J4" H 6550 2200 60  0000 C CNN
+F 1 "lsr1" H 6550 2500 60  0000 C CNN
+F 2 "w_conn_kk100:kk100_22-23-2021" H 6500 2350 60  0001 C CNN
+F 3 "" H 6500 2350 60  0000 C CNN
+	1    6500 2350
+	1    0    0    1   
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 5628F4F4
+P 3150 2800
+F 0 "R2" H 3250 2850 50  0000 L CNN
+F 1 "1k5" H 3250 2750 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 3150 2800 60  0001 C CNN
+F 3 "" H 3150 2800 60  0000 C CNN
+	1    3150 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2250 2350 2250
+Wire Wire Line
+	2100 2150 2100 3000
+Connection ~ 2100 2250
+Wire Wire Line
+	2550 1900 4700 1900
+Wire Wire Line
+	4800 2550 4800 3000
+Wire Wire Line
+	4900 2050 4900 1900
+Wire Wire Line
+	4900 1900 5150 1900
+Wire Wire Line
+	5150 1900 5150 1950
+Wire Wire Line
+	5050 2200 5200 2200
+Wire Wire Line
+	5150 2150 5150 2200
+Connection ~ 5150 2200
+Wire Wire Line
+	5150 2400 5150 3000
+Wire Wire Line
+	5400 2200 5750 2200
+Wire Wire Line
+	5450 2600 5450 3000
+Wire Wire Line
+	5050 2400 5450 2400
+Wire Wire Line
+	5750 2200 5750 2300
+Connection ~ 5450 2200
+Wire Wire Line
+	5750 2500 5750 3000
+Connection ~ 5450 2400
+Wire Wire Line
+	4150 2350 4100 2350
+Wire Wire Line
+	3900 2350 3850 2350
+Wire Wire Line
+	4150 2450 4000 2450
+Wire Wire Line
+	5450 1950 5450 2200
+Wire Wire Line
+	4500 2300 4550 2300
+Wire Wire Line
+	4700 1900 4700 2050
+Wire Wire Line
+	2650 1900 2650 2150
+Connection ~ 2650 1900
+Wire Wire Line
+	2650 2350 2650 3000
+Wire Wire Line
+	2000 1900 2150 1900
+Connection ~ 2100 1900
+Connection ~ 5450 2050
+Wire Wire Line
+	4000 2450 4000 2550
+Wire Wire Line
+	4000 2550 3850 2550
+Wire Wire Line
+	3050 2550 3250 2550
+Connection ~ 3150 2550
+Wire Wire Line
+	5450 2050 6300 2050
+Wire Wire Line
+	6300 2050 6300 2250
+Wire Wire Line
+	6400 2150 6400 2300
+Wire Wire Line
+	6200 2150 6400 2150
+Connection ~ 6300 2150
+Wire Wire Line
+	6200 2150 6200 2300
+Wire Wire Line
+	6200 2400 6200 2550
+Wire Wire Line
+	6200 2550 6400 2550
+Wire Wire Line
+	6300 2450 6300 3000
+Wire Wire Line
+	6400 2550 6400 2400
+Connection ~ 6300 2550
+$Comp
+L GND-RESCUE-wiilaserbar #PWR09
+U 1 1 56290B37
+P 6300 3000
+F 0 "#PWR09" H 6300 2750 50  0001 C CNN
+F 1 "GND" H 6300 2850 50  0000 C CNN
+F 2 "" H 6300 3000 60  0000 C CNN
+F 3 "" H 6300 3000 60  0000 C CNN
+	1    6300 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2450 3050 2350
+Wire Wire Line
+	3050 2350 3250 2350
+Connection ~ 3150 2350
+Wire Wire Line
+	3150 2900 3150 3000
+Wire Wire Line
+	3150 2200 3150 2350
+Wire Wire Line
+	3150 1900 3150 2000
+Connection ~ 3150 1900
+Wire Wire Line
+	3150 2550 3150 2700
+Connection ~ 3150 2650
+Wire Wire Line
+	3150 2650 4500 2650
+Wire Wire Line
+	4500 2650 4500 2300
+$Comp
+L +12V #PWR010
+U 1 1 562942EB
+P 1550 1700
+F 0 "#PWR010" H 1550 1550 50  0001 C CNN
+F 1 "+12V" H 1550 1840 50  0000 C CNN
+F 2 "" H 1550 1700 60  0000 C CNN
+F 3 "" H 1550 1700 60  0000 C CNN
+	1    1550 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L F_Small F1
+U 1 1 562E1427
+P 1900 1900
+F 0 "F1" H 1860 1960 50  0000 L CIN
+F 1 "250mA" H 1780 1840 50  0000 L CIN
+F 2 "SMD_Packages:SMD-1206_Pol" H 1900 1900 60  0001 C CNN
+F 3 "" H 1900 1900 60  0000 C CNN
+	1    1900 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1900 1800 1900
+Wire Wire Line
+	1450 2000 1750 2000
+Wire Wire Line
+	1750 2000 1750 2250
+Wire Wire Line
+	2350 2250 2350 2200
+Text Notes 1800 1750 0    20   Italic 0
+Over current, surge and \nreverse polarity protection.\n(bridge if unnecessary)
+Wire Wire Line
+	1550 1700 1550 1900
+Connection ~ 1550 1900
+Wire Wire Line
+	2100 1950 2100 1900
+$Comp
+L LTV-354T-6pin U1
+U 1 1 562E53DE
+P 3550 2450
+F 0 "U1" H 3340 2640 50  0000 L CNN
+F 1 "LTV-354T-6pin" H 3550 2650 50  0000 L CNN
+F 2 "Opto-Devices:Optocoupler_SMD_HandSoldering_KPC357_LTV35x_PC357_SingleChannel" H 3350 2250 50  0001 L CIN
+F 3 "" H 3575 2450 50  0000 L CNN
+	1    3550 2450
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line
+	1700 1600 1700 2350
+Wire Notes Line
+	1700 2350 2550 2350
+Wire Notes Line
+	2550 2350 2550 1600
+Wire Notes Line
+	2550 1600 1700 1600
+$EndSCHEMATC
