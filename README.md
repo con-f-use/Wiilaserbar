@@ -16,3 +16,8 @@ actually measured power at a university lab was ~2mW).
 
 The driver board was done in KiCAD while the case was 3D modelled in FreeCAD and printed on a LulzBot Mini.
 
+ToDo
+==========
+
+ - Case could be smaller and have snapins for the board
+
